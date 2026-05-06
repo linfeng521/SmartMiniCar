@@ -255,6 +255,6 @@ while (1)
 ![拍照](docs/imgs/阶段1运行图.png)
 
 
-![阶段1视频](docs/imgs/阶段1.mp4)
+[阶段1视频](https://github.com/linfeng521/SmartMiniCar/blob/main/docs/imgs/阶段1.mp4)
 
-[drawio文档笔记](https://app.diagrams.net/?mode=github&repo=linfeng521/SmartMiniCar&path=docs/智能小车.drawio)
+[在线drawio文档笔记](https://app.diagrams.net/#Hlinfeng521/SmartMiniCar/main/docs/智能小车.drawio)
