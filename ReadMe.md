@@ -78,6 +78,7 @@ TB6612FNG电机驱动模块(替代旧款L298N)
 | STBY | PA12 | 驱动使能，高电平有效(待定 现在直接使用接了3.3V) |
 
 ![alt text](docs/imgs/驱动PWM配置.png)
+
 #### 编码器引脚（霍尔编码器）
 
 | 功能 | 引脚 | 说明 |
@@ -108,14 +109,17 @@ __HAL_TIM_GET_COUNTER(&htim3)
 |---|---|---|
 | 电机霍尔测速器 | PB0 | GPIO EXTI0 外部中断输入，霍尔测速信号 |
 
-[霍尔测速](BSP/Hall/hall.c)
+[霍尔测速驱动](BSP/Hall/hall.c)
+
 #### 超声波模块引脚
 
 | 功能 | 引脚 | 说明 |
 |---|---|---|
 | Trig | PB7 | GPIO 输出，触发信号 |
 | Echo | PB6 | GPIO 输入，回波信号(可接 TIM4 输入捕获) |
-[超声波模块](BSP/HCSR04/hcsr04.c)
+
+[超声波模块驱动](BSP/HCSR04/hcsr04.c)
+
 #### OLED 显示屏引脚 && MPU6050 (I2C)
 
 | 功能 | 引脚 | 说明 |
@@ -174,7 +178,9 @@ __HAL_TIM_GET_COUNTER(&htim3)
 4、OLED 显示测试
 
 5、霍尔转速测试
+
 ![霍尔转速](docs/imgs/霍尔转速测试.gif)
+
 6、总体功能测试
 ```c
 while (1)
@@ -247,4 +253,8 @@ while (1)
 ![测试结果](docs/imgs/综合测试结果.png)
 
 ![拍照](docs/imgs/阶段1运行图.png)
-<video controls src="docs/imgs/阶段1.mp4" title="Title"></video>
+
+
+![阶段1视频](docs/imgs/阶段1.mp4)
+
+[drawio文档笔记](https://app.diagrams.net/?mode=github&repo=linfeng521/SmartMiniCar&path=docs/智能小车.drawio)
